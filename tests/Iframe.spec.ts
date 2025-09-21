@@ -42,3 +42,14 @@ test('Nested iFrame handling workaround', async ({ page }) => {
 
 
 });
+test('First test case', async ({ page }) => {
+
+    await page.goto('https://demoqa.com/nestedframes');
+    
+    const abc = await page.frameLocator('#frame1').frameLocator('iframe').locator('body').textContent();
+    console.log('Child frame text is : ',abc);
+    //console.log();
+    expect(abc).toContain('Child Iframe');
+    console.log('Nested frame text verified successfully');
+
+});
