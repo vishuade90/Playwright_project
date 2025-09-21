@@ -1,0 +1,3 @@
+Alert box text is :  I am a confirm alert
+Alert box text is :  I prompt you
+Confirm box text is :  I prompt you
