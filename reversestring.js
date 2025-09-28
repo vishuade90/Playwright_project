@@ -4,16 +4,17 @@
 // let inputString: string = "Hello";
 // let reversedString: string = reverseString(inputString);
 // console.log(reversedString);
-// //revers string
-// function reverseString(str: string): string {
-//     let reversed: string = "";  
-//     for (let i=str.length - 1; i >= 0; i--  ) { 
-//         reversed =reversed+ str[i];
-//     }
-//     return reversed;
-// }
-// console.log("reverse string",reverseString("Hello"));
-console.log("------------armstrong--------------");
+console.log("------------Reverse string--------------");
+//revers string
+function reverseString(str) {
+    var reversed = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        reversed = reversed + str[i];
+    }
+    return reversed;
+}
+console.log("reverse string", reverseString("Hello"));
+console.log("------------Armstrong--------------");
 function isarmstring(num) {
     var numstr = num.toString();
     var digit = numstr.split("");
@@ -30,7 +31,7 @@ function isarmstring(num) {
     return sum === num;
 }
 console.log("is armstrong number", isarmstring(153));
-console.log("------------remoce duplcate finf unique character--------------");
+console.log("------------Remove duplcate finf unique character--------------");
 function getUniqueCharacters(input) {
     var seen = new Set();
     var result = '';

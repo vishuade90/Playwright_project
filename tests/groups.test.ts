@@ -1,6 +1,6 @@
 import {test,expect}from '@playwright/test';
 test.describe.only('Payment Flow', () => {
-test.fail('has title 1', async ({ page }) => {
+test('has title 1', async ({ page }) => {
    
   console.log('test 1');
 });

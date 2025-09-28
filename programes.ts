@@ -1,5 +1,4 @@
 function removeNumbers(input: string): string {
-  //return input.replace(/\d+/g, '');
   return input.replace(/[0-9]/g, '');
 }
 

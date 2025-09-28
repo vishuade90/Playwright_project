@@ -1,32 +1,38 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="19.09075">
-<testsuite name="maximizebrowser.spec.ts" timestamp="2025-09-19T01:30:57.381Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.522" errors="0">
-<testcase name="Maximize using args" classname="maximizebrowser.spec.ts" time="0.522">
-<failure message="maximizebrowser.spec.ts:14:5 Maximize using args" type="FAILURE">
-<![CDATA[  [chromium] › maximizebrowser.spec.ts:14:5 › Maximize using args ──────────────────────────────────
-
-    Error: browser.newContext: "deviceScaleFactor" option is not supported with null "viewport"
-
-      18 |   });
-      19 |
-    > 20 |   const context = await browser.newContext({
-         |                   ^
-      21 |     viewport: null, // important with start-maximized
-      22 |   });
-      23 |
-        at C:\Users\Vishal\OneDrive\Desktop\Playwright_project\tests\maximizebrowser.spec.ts:20:19
-
-    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-results\maximizebrowser-Maximize-using-args-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-results\maximizebrowser-Maximize-using-args-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="16.569606">
+<testsuite name="groups.test.ts" timestamp="2025-09-28T04:20:31.279Z" hostname="chromium" tests="3" failures="0" skipped="0" time="13.259" errors="0">
+<testcase name="Payment Flow › has title 1" classname="groups.test.ts" time="5.816">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\maximizebrowser-Maximize-using-args-chromium\trace.zip]]
+<![CDATA[test 1
+
+[[ATTACHMENT|test-results\groups-Payment-Flow-has-title-1-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\groups-Payment-Flow-has-title-1-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\groups-Payment-Flow-has-title-1-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Payment Flow › has title 2" classname="groups.test.ts" time="5.888">
+<system-out>
+<![CDATA[test 2
+
+[[ATTACHMENT|test-results\groups-Payment-Flow-has-title-2-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\groups-Payment-Flow-has-title-2-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\groups-Payment-Flow-has-title-2-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Purchase flow › has title 4" classname="groups.test.ts" time="1.555">
+<system-out>
+<![CDATA[test 4
+
+[[ATTACHMENT|test-results\groups-Purchase-flow-has-title-4-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\groups-Purchase-flow-has-title-4-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\groups-Purchase-flow-has-title-4-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
